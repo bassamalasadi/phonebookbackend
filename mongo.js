@@ -8,7 +8,7 @@ if ( process.argv.length<3 ) {
 const password = process.argv[2]
 
 const url =
-  `mongodb+srv://bassam:badboy613@phonebook-konjk.mongodb.net/phonebook?retryWrites=true&w=majority`
+  `mongodb+srv://bassam:${password}@phonebook-konjk.mongodb.net/phonebook?retryWrites=true&w=majority`
 
 mongoose.connect(url, { useNewUrlParser: true })
 
